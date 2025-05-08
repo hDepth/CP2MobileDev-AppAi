@@ -1,13 +1,12 @@
+import { Tabs } from "expo-router";
 
-import { Tabs } from 'expo-router';
-
-export default function Layout() {
+export default function TabsLayout() {
   return (
     <Tabs>
-      <Tabs.Screen name="(tabs)/Home" options={{ title: "Home", headerShown: false }} />
-      <Tabs.Screen name="(tabs)/ChatAI" options={{ title: "Chat AI", headerShown: false }} />
-      <Tabs.Screen name="(tabs)/ImageAnalysis" options={{ title: "Análise de Imagem", headerShown: false }} />
-      <Tabs.Screen name="(tabs)/Developers" options={{ title: "Desenvolvedores", headerShown: false }} />
+      <Tabs.Screen name="Home" options={{ title: "Início" }} />
+      <Tabs.Screen name="ChatAI" options={{ title: "Chat IA" }} />
+      <Tabs.Screen name="ImageAnalysis" options={{ title: "Análise de Imagem" }} />
+      <Tabs.Screen name="Developers" options={{ title: "Desenvolvedores" }} />
     </Tabs>
   );
 }
